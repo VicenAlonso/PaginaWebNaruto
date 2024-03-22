@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+}
+
+nav {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ----- HEADER ----- */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    /* FLEX */
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+header nav li {
+    margin: 0 20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px) {
+    header {
+        padding: 100px 60px;
+    }
+}
+
+@media(max-width:600px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav li a {
+        font-size: 16px;
+    }
+}
+
+/* SECCIONES */
+section {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+
+@media(max-width:100px) {
+    section {
+        padding: 100px 50px;
+    }
+}
+
+@media(max-width:500px) {
+    section {
+        padding: 50px 30px;
+    }
+}
+
+
+/* BANNER */
+.banner {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    min-height: 80vh;
+    color: white;
+}
+
+.banner .banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url("../img/konoha\ fondosi.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-clip: content-box;
+    background-position: center;
+}
+
+.banner .banner-img::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    content: '';
+}
+
+.banner h1 {
+    margin-top: 10%;
+    margin-bottom: 10px;
+    font-size: 60px;
+}
+
+.banner h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.banner a.banner-btn {
+    text-transform: uppercase;
+    background: crimson;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+
+/*Akatsuki*/
+.Akatsuki-container{
+    display: -webkit-box;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Akatsuki-titulo{
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+.Akatsuki-container li{
+    padding: 20px;
+    height: 300px;
+    background-size: cover;
+    background-clip: content-box;
+    background-position: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.Akatsuki-izq{
+    background-image: url(../IMG/uchiha.gif);
+    flex-basis: 40%;
+
+}
+
+.Akatsuki-der{
+    flex-basis: 60%;
+
+}
+
+.Akatsuki-container p{
+    text-align: justify;
+    margin-bottom: 35px;
+    padding-left: 0;
+}
+
+.Akatsuki-container .Akatsuki-der h2{
+    margin-top: 20px;
+}
+
+.Akatsuki-container .Akatsuki-der .Akatsuki-btn{
+    text-transform: uppercase;
+            background: crimson;
+            font-size: 15px;
+            padding: 15px 30px;
+            border-radius: 50px;
+}
+    
+@media(max-width:600px){
+    .Akatsuki-izq, .Akatsuki-der{
+        flex-basis: 100%;
+    }
+    .Akatsuki-container .Akatsuki-der{
+        text-align: center;
+        margin-bottom: 100px;
+    }
+}
+
+/*Uzumaki*/
+.Uzumaki-container{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Uzumaki-titulo{
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+.Uzumaki-container li{
+    padding: 20px;
+    height: 300px;
+    background-size: cover;
+    background-clip: content-box;
+    background-position: center;
+}
+
+
+.Uzumaki-izq{
+    background-image: url("../IMG/uzumakigif.gif");
+    flex-basis: 40%;
+
+}
+
+.Uzumaki-der{
+    flex-basis: 60%;
+
+}
+
+.Uzumaki-container p{
+    text-align: justify;
+    margin-bottom: 35px;
+    padding-left: 0;
+}
+
+.Uzumaki-container .Uzumaki-der h2{
+    margin-top: 20px;
+}
+
+.Uzumaki-container .Uzumaki-der .Uzumaki-btn{
+    text-transform: uppercase;
+            background: crimson;
+            font-size: 15px;
+            padding: 15px 30px;
+            border-radius: 50px;
+}
+    
+@media(max-width:600px){
+    .Uzumaki-izq, .Uzumaki-der{
+        flex-basis: 100%;
+    }
+    .Uzumaki-container .Uzumaki-der{
+        text-align: center;
+        margin-bottom: 100px;
+    }
+}
+
+/*Uchiha*/
+#Uchiha{
+    background-color: gray;
+}
+
+.Uchiha-container{
+    display: -webkit-box;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.Uchiha-container li{
+    flex-basis: 33%;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.Uchiha-container li h4{
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.Uchiha-titulo{
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+@media(max-width:600px){
+    .Uchiha-container li{
+        flex-basis: 100%;
+        margin-bottom: 60px;
+    }
+
+    .Uchiha-container li p{
+        text-align: justify;
+    }
+}
+
+/* FOOTER */
+footer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 60px 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
